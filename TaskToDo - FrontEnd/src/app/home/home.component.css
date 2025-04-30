@@ -1,0 +1,101 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px auto 20px;
+  max-width: 900px;
+  padding: 0 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.header h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+.logout-btn {
+  padding: 10px 16px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
+.todo-table {
+  width: 90%;
+  margin: 0 auto 30px;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.todo-table th, .todo-table td {
+  padding: 14px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.todo-table th {
+  background-color: #343a40;
+  color: white;
+}
+
+.todo-table td {
+  background-color: #f9f9f9;
+}
+
+.btn-update {
+  background-color: #007bff; /* Bootstrap blue */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-update:hover {
+  background-color: #0056b3;
+}
+
+.btn-delete {
+  background-color: #dc3545; /* Bootstrap red */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.actions button {
+  padding: 12px 20px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.actions button:hover {
+  background-color: #218838;
+}

@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-dark  bg-dark fixed-top scrolling-navbar">
+  <a class="navbar-brand nav-link text-uppercase font-weight-bold text-white ml-2">Task To Do</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        
+        <a class="nav-link text-uppercase font-weight-bold text-white mr-4" href="#" (click)="logout()">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div style="margin-top: 100px; margin-bottom: 30px; text-align: center;">
+  <h2>Tasks To Do </h2>
+</div>
+
+<table class="todo-table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Update</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let todo of todos">
+      <td>{{ todo.title }}</td>
+      <td>{{ todo.description }}</td>
+      <td><button class="btn-update" [routerLink]="['/update', todo.id]">Update</button></td>
+      <td><button class="btn-delete" (click)="deleteTodo(todo.id)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="actions">
+  <button [routerLink]="['/add']">Add Todo</button>
+</div>
+
+

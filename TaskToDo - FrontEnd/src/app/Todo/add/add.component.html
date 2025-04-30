@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-dark  bg-dark fixed-top scrolling-navbar">
+  <a class="navbar-brand nav-link text-uppercase font-weight-bold text-white ml-2">Task To Do</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item " ng-show="loginRegister"><a href="home"class="nav-link text-uppercase font-weight-bold text-white mr-4" >Todo Table</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="add-container">
+<h2>Add New Todo</h2>
+<form (ngSubmit)="submit()" #todoForm="ngForm">
+  
+  <input id="title" name="title" [(ngModel)]="todo.title" placeholder="Title" required />
+  <input id="description" name="description" [(ngModel)]="todo.description" placeholder="Descrition" required />
+
+  <button type="submit">Add Todo</button>
+</form>
+</div>
